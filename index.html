@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Jiřina & Tomáš | Svatba 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --beige:#f6f1e7;
+    --paper:#fffaf1;
+    --brown:#6a4b3b;
+    --gold:#c8a96b;
+    --green:#6e7c52;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Cormorant Garamond', serif;
+    background:var(--beige);
+    color:var(--brown);
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h1,h2,h3{
+    font-weight:600;
+}
+
+h2{
+    font-size:3rem;
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--brown);
+}
+
+p{
+    font-size:1.3rem;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(255,250,241,0.88), rgba(255,250,241,0.92)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"🌻";
+    position:absolute;
+    top:30px;
+    left:30px;
+    font-size:5rem;
+    opacity:0.8;
+}
+
+.hero::after{
+    content:"🌻";
+    position:absolute;
+    bottom:30px;
+    right:30px;
+    font-size:5rem;
+    opacity:0.8;
+}
+
+.hero-content{
+    background:rgba(255,255,255,0.6);
+    padding:50px;
+    border-radius:20px;
+    backdrop-filter:blur(3px);
+    max-width:800px;
+}
+
+.hero-image{
+    width:100%;
+    height:350px;
+    border-radius:18px;
+    overflow:hidden;
+    margin-bottom:30px;
+    border:4px solid rgba(255,255,255,0.7);
+    background:#e8dfd0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#8b7a67;
+    font-size:1.4rem;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.subtitle{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.names{
+    font-family:'Great Vibes', cursive;
+    font-size:6rem;
+    color:var(--brown);
+    margin:20px 0;
+}
+
+.date{
+    font-size:2rem;
+}
+
+.card{
+    background:var(--paper);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.07);
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.timeline-item{
+    padding:20px 0;
+    border-bottom:1px solid #d9cbb8;
+}
+
+.timeline-item:last-child{
+    border:none;
+}
+
+.timeline-time{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:var(--green);
+}
+
+.faq-item{
+    margin-bottom:25px;
+}
+
+.faq-item h3{
+    font-size:1.6rem;
+    margin-bottom:10px;
+    color:var(--green);
+}
+
+.map{
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:30px;
+}
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    background:#efe5d6;
+}
+
+footer p{
+    font-size:1.2rem;
+}
+
+.small{
+    font-size:1.1rem;
+    opacity:0.8;
+}
+
+@media(max-width:768px){
+
+    .names{
+        font-size:4rem;
+    }
+
+    h2{
+        font-size:2.3rem;
+    }
+
+    p{
+        font-size:1.15rem;
+    }
+
+    .hero-content{
+        padding:30px;
+    }
+
+    .hero-image{
+        height:250px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-image">
+
+            <!-- SEM VLOŽTE VAŠI SPOLEČNOU FOTKU -->
+
+            <!--
+            Nahraďte obsah níže:
+            -->
+
+            <span>Zde bude vaše společná fotografie</span>
+
+            <!--
+
+            Příklad vložení fotky:
+
+            <img src="fotka.jpg" alt="Jiřina a Tomáš">
+
+            -->
+
+        </div>
+
+        <div class="subtitle">
+            Budeme se brát!
+        </div>
+
+        <h1 class="names">
+            Jiřina & Tomáš
+        </h1>
+
+        <div class="date">
+            25. července 2026
+        </div>
+
+        <p style="margin-top:20px;">
+            Budeme moc rádi, když náš velký den oslavíte s námi.
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>O našem dni</h2>
+
+        <div class="card">
+
+            <p>
+                Čeká nás pohodová letní svatba v přírodním a staročeském duchu.
+                Bez přehnané okázalosti, ale s dobrou náladou, krásnými lidmi,
+                poctivým jídlem a společnou zábavou.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>Místo & čas</h2>
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h3>Obřad</h3>
+
+                <p>
+                    25. 7. 2026 ve 12:00
+                </p>
+
+                <p class="small">
+                    Místo obřadu bude ještě upřesněno.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Sraz hostů</h3>
+
+                <p>
+                    11:00
+                </p>
+
+                <p>
+                    Restaurace Špejchar<br>
+                    Březnice u Příbrami
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="map">
+
+            <iframe
+                src="https://maps.google.com/maps?q=Restaurace%20%C5%A0pejchar%20B%C5%99eznice&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>Orientační harmonogram</h2>
+
+        <div class="card">
+
+            <div class="timeline-item">
+                <div class="timeline-time">12:00</div>
+                <p>Obřad</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">13:00</div>
+                <p>Zahájení svatebního oběda</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">16:00</div>
+                <p>Krájení dortu</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">17:00–19:00</div>
+                <p>První novomanželský tanec</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-time">Průběžně</div>
+                <p>Soutěže, hudba a společná zábava</p>
+            </div>
+
+            <p style="margin-top:30px;">
+                Přesné časy se mohou během dne měnit podle atmosféry,
+                počasí a zábavy.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>Hostina</h2>
+
+        <div class="card">
+
+            <p>
+                Svatební hostina bude probíhat formou odpoledního rautu.
+                Čeká nás servírovaná polévka, bohatý raut,
+                večerní občerstvení i grilování.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>Dress code</h2>
+
+        <div class="card">
+
+            <p>
+                Na obřad budeme rádi za formální oblečení.
+            </p>
+
+            <br>
+
+            <p>
+                Po zbytek dne ale klidně zvolte pohodlnější
+                a neformální variantu — chceme hlavně,
+                abyste si den užili pohodlně a v letní pohodě.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>Ubytování</h2>
+
+        <div class="card">
+
+            <p>
+                Část hostů bude ubytována přímo v místě konání,
+                část v nedalekém hotelu Sportcentrum Vitality.
+            </p>
+
+            <br>
+
+            <p>
+                Cena ubytování je 450 Kč / osoba
+                a hosté si jej hradí sami.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>Svatební dary</h2>
+
+        <div class="card">
+
+            <p>
+                Protože už spolu nějaký čas bydlíme,
+                máme doma talířů, hrníčků i mixérů více než dost.
+            </p>
+
+            <br>
+
+            <p>
+                Pokud nám budete chtít udělat radost,
+                potěší nás spíše finanční příspěvek,
+                který využijeme na společné zážitky
+                a další dobrodružství.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>Svědci</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Mikuláš Joukl</h3>
+                <p>telefon doplníme</p>
+            </div>
+
+            <div class="card">
+                <h3>Aneta Fojtíková</h3>
+                <p>telefon doplníme</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <h2>FAQ</h2>
+
+        <div class="card">
+
+            <div class="faq-item">
+                <h3>Kde bude obřad?</h3>
+                <p>
+                    Místo obřadu ještě upřesníme.
+                    Všechny informace doplníme včas na web.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Kde bude hostina a oslava?</h3>
+                <p>
+                    Celé následné odpoledne i večer proběhne
+                    v restauraci Špejchar v Březnici.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Jaký je dress code?</h3>
+                <p>
+                    Na obřad formální oblečení,
+                    později během dne klidně pohodlnější variantu.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Bude možnost ubytování?</h3>
+                <p>
+                    Ano. Část hostů bude ubytována na místě,
+                    část v hotelu Sportcentrum Vitality.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Můžeme přijet autem?</h3>
+                <p>
+                    Ano, parkování bude možné v místě konání.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Co když mám dietní omezení?</h3>
+                <p>
+                    Dejte nám prosím vědět předem
+                    a pokusíme se vše zařídit.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Budou děti vítány?</h3>
+                <p>
+                    Ano 🙂
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        Těšíme se na vás ❤️
+    </p>
+
+    <br>
+
+    <p class="small">
+        Jiřina & Tomáš · 25. 7. 2026
+    </p>
+
+</footer>
+
+</body>
+</html>
