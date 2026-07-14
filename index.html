@@ -221,6 +221,64 @@ p{
     margin-top:30px;
 }
 
+.room-table-wrap{
+    overflow-x:auto;
+}
+
+.room-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:1.05rem;
+    line-height:1.55;
+}
+
+.room-table thead th{
+    text-align:left;
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:#7a6645;
+    padding:0.5rem 1rem 0.5rem 0;
+    border-bottom:1px solid rgba(160,120,55,0.25);
+    font-weight:600;
+}
+
+.room-table tbody tr{
+    border-bottom:1px solid rgba(160,120,55,0.10);
+}
+
+.room-table tbody tr:last-child{
+    border-bottom:none;
+}
+
+.room-table tbody td{
+    padding:0.6rem 1rem 0.6rem 0;
+    vertical-align:top;
+}
+
+.room-table .col-room{
+    white-space:nowrap;
+    font-weight:600;
+    min-width:90px;
+    padding-right:1.4rem;
+}
+
+.room-table tr.loc-row td{
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    color:var(--gold);
+    font-weight:600;
+    padding:0.6rem 0;
+    border-top:1px solid rgba(160,120,55,0.25);
+    border-bottom:1px solid rgba(160,120,55,0.25);
+    background:rgba(200,169,107,0.12);
+}
+
+.room-table tr.loc-row:first-child td{
+    border-top:none;
+}
+
 footer{
     text-align:center;
     padding:50px 20px;
@@ -669,8 +727,57 @@ footer p{
                 a hosté si jej hradí sami. 
                 Peníze nám prosím dejte den po svatbě nebo pošlete na účet. 
             </p>
-            <H3>Špejchar</H3>
-            <p><ul><li>Pokoj 1  - Jmeno 1</li></ul></p>
+            <div class="room-table-wrap">
+                <table class="room-table">
+                    <thead>
+                        <tr>
+                            <th>Pokoj</th>
+                            <th>Hosté</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="loc-row">
+                            <td colspan="2">Špejchar</td>
+                        </tr>
+                        <tr>
+                            <td class="col-room">Pokoj 1</td>
+                            <td>Danča V., Radka N., Honza Ř., Jája M., Ondra M. </td>
+                            <td class="col-room">Pokoj 2</td>
+                            <td>Novomanželé</td>
+                            <td class="col-room">Pokoj 3</td>
+                            <td>Aneta F., Karolína H.</td>
+                            <td class="col-room">Pokoj 4</td>
+                            <td>Krtek a Eva, Tuky a Naty</td>
+                            <td class="col-room">Pokoj 5</td>
+                            <td>Bartošovi</td>
+                            <td class="col-room">Pokoj 6</td>
+                            <td>Jouklovi</td>
+                            <td class="col-room">Pokoj 7</td>
+                            <td>Tomkovi</td>
+                            <td class="col-room">Pokoj 8</td>
+                            <td>Verča B., Pája Ch., Kuba S., Zdeňa S., Vláďa B., Pavel K. </td>
+                        </tr>
+
+                        <tr class="loc-row">
+                            <td colspan="2">Sportcentrum Vitality</td>
+                            <td colspan="2">Sadová ulice 746</td>
+                        </tr>
+                        <tr>
+                            <td class="col-room">Pokoj 1</td>
+                            <td>Šporerovi </td>
+                            <td class="col-room">Pokoj 2</td>
+                            <td>Tajchlovi</td>
+                            <td class="col-room">Pokoj 3</td>
+                            <td>Čechovi</td>
+                            <td class="col-room">Pokoj 4</td>
+                            <td>Havlosovi</td>
+                            <td class="col-room">Pokoj 5</td>
+                            <td>Kumar a Lucka</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </div>
